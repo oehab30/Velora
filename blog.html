@@ -3,34 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Commerce </title>
-  <link rel="stylesheet" href="home.css"/>
-  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <title>The Velora Journal - VELORA</title>
+  <link rel="stylesheet" href="css/home.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link rel="stylesheet" href="shop.css">
+<script src="js/functions.js" defer></script>
 </head>
 <body>
+<div id="preloader">
+    <div class="loader-content">
+        <div class="loader-logo">VELORA</div>
+    </div>
+</div>
 <!--  logo and navbar  -->
-<header>
-  <div class="logo">
-    <a href="home.html"><img src="pictures/general/logo.png" alt="Logo"></a>
-  </div>
-  <nav>
-    <ul>
-        <li><a class="active" href="home.html">Home</a></li>
-      <li><a class="active" href="shop.html">Shop</a></li>
-      <li><a class="active" href="blog.html">Blog</a></li>
-      <li><a class="active" href="about.html">About</a></li>
-      <li><a class="active" href="contact.html">Contact</a></li>
-<li><a class="active" id="icon-cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+<header class="site-header">
+  <a class="logo" href="home.html">VELORA</a>
+
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="close-btn" class="nav-close" aria-label="Close menu">&times;</button>
+    <ul class="nav-list">
+      <li><a class="nav-link" href="home.html">Home</a></li>
+      <li><a class="nav-link" href="shop.html">Shop</a></li>
+      <li><a class="nav-link active" href="blog.html">Blog</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li id="lg-bag">
+        <a class="nav-link" href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
 
 
-<section id="blog-page" class="home-page">
-<h2>#readmore</h2>
-<p>Read all case studies about our products!</p>
+<section id="blog-page" class="home-page" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1479064566235-06a04205a022?auto=format&fit=crop&q=80&w=1887');">
+    <h2>#LuxeInsights</h2>
+    <p>Chronicles of timeless style and high-fashion craftsmanship.</p>
 </section>
 
 <section class="blog">
@@ -39,8 +53,8 @@
             <img src="pictures/blog/b1 (1).jpg" alt="">
         </div>
         <div class="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, saepe hic expedita sequi omnis, aperiam quo ab cum reprehenderit error cumque eveniet rem dolor delectus optio, officiis praesentium quas odio.</p>
+            <h4>The Art of the Silk Renaissance</h4>
+            <p>Explore the resurgence of hand-woven silk in modern high fashion. Discover how Velora is leading the industry towards sustainable elegance and timeless craftsmanship that lasts generations.</p>
             <a href="">CONTINUE READING</a>
         </div>
         <h1>13/01</h1>
@@ -50,8 +64,8 @@
             <img src="pictures/blog/b2.jpg" alt="">
         </div>
         <div class="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, saepe hic expedita sequi omnis, aperiam quo ab cum reprehenderit error cumque eveniet rem dolor delectus optio, officiis praesentium quas odio.</p>
+            <h4>The Art of the Silk Renaissance</h4>
+            <p>Explore the resurgence of hand-woven silk in modern high fashion. Discover how Velora is leading the industry towards sustainable elegance and timeless craftsmanship that lasts generations.</p>
             <a href="">CONTINUE READING</a>
         </div>
         <h1>13/01</h1>
@@ -61,8 +75,8 @@
             <img src="pictures/blog/b3.jpg" alt="">
         </div>
         <div class="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, saepe hic expedita sequi omnis, aperiam quo ab cum reprehenderit error cumque eveniet rem dolor delectus optio, officiis praesentium quas odio.</p>
+            <h4>The Art of the Silk Renaissance</h4>
+            <p>Explore the resurgence of hand-woven silk in modern high fashion. Discover how Velora is leading the industry towards sustainable elegance and timeless craftsmanship that lasts generations.</p>
             <a href="">CONTINUE READING</a>
         </div>
         <h1>13/01</h1>
@@ -72,8 +86,8 @@
             <img src="pictures/blog/b4.jpg" alt="">
         </div>
         <div class="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, saepe hic expedita sequi omnis, aperiam quo ab cum reprehenderit error cumque eveniet rem dolor delectus optio, officiis praesentium quas odio.</p>
+            <h4>The Art of the Silk Renaissance</h4>
+            <p>Explore the resurgence of hand-woven silk in modern high fashion. Discover how Velora is leading the industry towards sustainable elegance and timeless craftsmanship that lasts generations.</p>
             <a href="">CONTINUE READING</a>
         </div>
         <h1>13/01</h1>
@@ -83,8 +97,8 @@
             <img src="pictures/blog/b5.jpg" alt="">
         </div>
         <div class="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, saepe hic expedita sequi omnis, aperiam quo ab cum reprehenderit error cumque eveniet rem dolor delectus optio, officiis praesentium quas odio.</p>
+            <h4>The Art of the Silk Renaissance</h4>
+            <p>Explore the resurgence of hand-woven silk in modern high fashion. Discover how Velora is leading the industry towards sustainable elegance and timeless craftsmanship that lasts generations.</p>
             <a href="">CONTINUE READING</a>
         </div>
         <h1>13/01</h1>
@@ -94,8 +108,8 @@
             <img src="pictures/blog/b6.jpg" alt="">
         </div>
         <div class="blog-details">
-            <h4>The Cotton-Jersey Zip-Up Hoodie</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, saepe hic expedita sequi omnis, aperiam quo ab cum reprehenderit error cumque eveniet rem dolor delectus optio, officiis praesentium quas odio.</p>
+            <h4>The Art of the Silk Renaissance</h4>
+            <p>Explore the resurgence of hand-woven silk in modern high fashion. Discover how Velora is leading the industry towards sustainable elegance and timeless craftsmanship that lasts generations.</p>
             <a href="">CONTINUE READING</a>
         </div>
         <h1>13/01</h1>
@@ -116,21 +130,20 @@
 
 <section class="banner-search-box">
   <div class="descrip">
-    <h4>Sign Up For Newsletters</h4>
-    <p>Get E-mail update about our latest shop and <span> special offers.</span></p>
+    <h4>Join the Velora Circle</h4>
+    <p>Receive exclusive insights and access to our <span> bespoke collections.</span></p>
   </div>
 
-
   <div class="for-box">
-    <input type="text">
-    <button class="button-green">Sign up</button>
+    <input type="email" placeholder="Your Distinguished E-mail">
+    <button class="button-luxe">Join Now</button>
   </div>
 </section>
 
 
 <footer>
   <div class="fot-box">
-    <img class="img-logo" src="pictures/general/logo.png" alt="logo image">
+    <a class="logo" href="home.html">VEL<span>ORA</span></a>
     <h4>Contact</h4>
     <p><strong>Address:</strong> Egypt - Minya</p>
     <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
@@ -175,6 +188,7 @@
   </div>
 </footer>
 
+<script src="js/functions.js" defer></script>
 </body>
 
 </html>

@@ -3,85 +3,103 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Commerce </title>
-  <link rel="stylesheet" href="home.css"/>
-  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <title>About - VELORA</title>
+  <link rel="stylesheet" href="css/home.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<link rel="stylesheet" href="shop.css">
+<script src="js/functions.js" defer></script>
 </head>
 <body>
+<!-- <div id="preloader">
+    <div class="loader-content">
+        <div class="loader-logo">VELORA</div>
+    </div>
+</div> -->
 <!--  logo and navbar  -->
-<header>
-  <div class="logo">
-    <a href="home.html"><img src="pictures/general/logo.png" alt="Logo"></a>
-  </div>
-  <nav>
-    <ul>
-     <li><a class="active" href="home.html">Home</a></li>
-      <li><a class="active" href="shop.html">Shop</a></li>
-      <li><a class="active" href="blog.html">Blog</a></li>
-      <li><a class="active" href="about.html">About</a></li>
-      <li><a class="active" href="contact.html">Contact</a></li>
-<li><a class="active" id="icon-cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+<header class="site-header">
+  <a class="logo" href="home.html">VELORA</a>
+
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="close-btn" class="nav-close" aria-label="Close menu">&times;</button>
+    <ul class="nav-list">
+      <li><a class="nav-link" href="home.html">Home</a></li>
+      <li><a class="nav-link" href="shop.html">Shop</a></li>
+      <li><a class="nav-link" href="blog.html">Blog</a></li>
+      <li><a class="nav-link active" href="about.html">About</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li id="lg-bag">
+        <a class="nav-link" href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
 
-<section  class="home-page">
-<h2>#KnowUs</h2>
-<p>Lorem ipsum dolor sit amet consectetur.</p>
+<section class="home-page" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&q=80&w=2070');">
+    <h2>#TheMakers</h2>
+    <p>Crafting timeless elegance since 1994.</p>
 </section>
 
-
-<section class="about-header">
-    <img src="pictures/general/about-img.jpg" alt="">
+<section class="about-header section-p1">
+    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=2070" alt="Velora Atelier Interior">
     <div class="about-text">
-<h2>Who We Are?</h2>
-<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis iusto cum adipisci. Iste amet, officiis ex voluptatibus eos repellat. Amet hic culpa ullam dicta delectus sint aspernatur voluptate voluptatum minus! Velit beatae non, adipisci provident ipsa tempore iste recusandae, ipsum explicabo aliquam itaque dolore aspernatur dolor numquam odio! Maxime deserunt numquam recusandae dolor sint dolores vero aspernatur, fugit dolore, velit, tempora veniam excepturi! Culpa rerum explicabo voluptas, delectus labore quae quidem voluptates possimus! Itaque perspiciatis aut sequi cumque quod eum doloremque saepe, ex dolor dolore tempore cupiditate omnis minus assumenda.
+        <h2>Who We Are?</h2>
+        <p>At VELORA, we believe that fashion is more than just clothing; it's a form of high-art expression.</p>
+        
+        <abbr title="">"Style is a way to say who you are without having to speak." - We live by these words every day, helping our customers find their unique voice through fashion.</abbr>
+        
+        <br><br>
 
-</p>
-<abbr title="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat totam tenetur vero soluta
-    deserunt quam rerum quia, accusamus blanditiis ducimus architecto amet natus cumque laborumaccusantium!</abbr>
-<br> <br>
-    <marquee bgcolor="#ccc" loop="-1" scrollamount="5" width="100%">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae modi, nulla repudiandae molestiae
-        est inventore corrupti sapiente. Rerum maxime esse temporibus libero non consequatur iure! Velit!
-    </marquee>
-</div>
+        <div class="marquee-container">
+            <div class="marquee-content">
+                Join our community of over 100,000 fashion lovers! • Sustainable fashion delivered to your doorstep • New arrivals every week • 24/7 Customer Support
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="about-app" class="section-p1">
+    <h1>Download Our <a href="#">Mobile App</a></h1>
+    <p>Shop on the go with our sleek mobile app. Get exclusive deals, early access to sales, and seamless checkout.</p>
+    <div class="video">
+        <img src="pictures/general/app-mockup.png" alt="Cara Mobile App" style="max-width: 400px; margin: 0 auto; display: block; filter: drop-shadow(var(--shadow-lg));">
+    </div>
 </section>
 
 
 
-<h1 style="text-align: center; margin:30px 0px;">Download Our <a href="" style="color: blue;">app</a></h1>
 
 
-
-
-
-<section class="features">
+<section class="features section-p1">
 <div class="fe-box">
-  <img src="pictures/features section/f1.png" alt="">
-  <h6 id="fe-h1"> Free shipping</h6>
+  <i class="fa-solid fa-truck-fast"></i>
+  <h6>Express Courier</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f2.png" alt="">
-  <h6 id="fe-h2"> Free shipping</h6>
+  <i class="fa-solid fa-clock-rotate-left"></i>
+  <h6>24/7 Concierge</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f3.png" alt="">
-  <h6 id="fe-h3"> Free shipping</h6>
+  <i class="fa-solid fa-shield-halved"></i>
+  <h6>Secure Atelier</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f4.png" alt="">
-  <h6 id="fe-h4"> Free shipping</h6>
+  <i class="fa-solid fa-award"></i>
+  <h6>Artisan Quality</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f5.png" alt="">
-  <h6 id="fe-h5"> Free shipping</h6>
+  <i class="fa-solid fa-gem"></i>
+  <h6>Exclusive Edits</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f6.png" alt="">
-  <h6 id="fe-h6"> Free shipping</h6>
+  <i class="fa-solid fa-gift"></i>
+  <h6>Luxe Gifting</h6>
 </div>
 </section>
 
@@ -90,7 +108,7 @@
 
 <footer>
   <div class="fot-box">
-    <img class="img-logo" src="pictures/general/logo.png" alt="logo image">
+    <a class="logo" href="home.html">VELORA</a>
     <h4>Contact</h4>
     <p><strong>Address:</strong> Egypt - Minya</p>
     <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
@@ -136,6 +154,7 @@
 </footer>
 
 
+<script src="js/functions.js" defer></script>
 </body>
 
 </html>

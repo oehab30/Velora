@@ -3,62 +3,83 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>E-Commerce </title>
-  <link rel="stylesheet" href="home.css"/>
-  <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+  <title>VELORA | Luxury Fashion House</title>
+  <link rel="stylesheet" href="css/home.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<script src="js/functions.js" defer></script>
 </head>
 <body>
+<div id="preloader">
+    <div class="loader-content">
+        <div class="loader-logo">VELORA</div>
+    </div>
+</div>
+
+
+
 <!--  logo and navbar  -->
-<header>
-  <div class="logo">
-    <a href="home.html"><img src="pictures/general/logo.png" alt="Logo"></a>
-  </div>
-  <nav>
-    <ul>
-    <li><a class="active" href="home.html">Home</a></li>
-      <li><a class="active" href="shop.html">Shop</a></li>
-      <li><a class="active" href="blog.html">Blog</a></li>
-      <li><a class="active" href="about.html">About</a></li>
-      <li><a class="active" href="contact.html">Contact</a></li>
-<li><a class="active" id="icon-cart" href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+<header class="site-header">
+  <a class="logo" href="home.html">VELORA</a>
+
+  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <button id="close-btn" class="nav-close" aria-label="Close menu">&times;</button>
+    <ul class="nav-list">
+      <li><a class="nav-link active" href="home.html">Home</a></li>
+      <li><a class="nav-link" href="shop.html">Shop</a></li>
+      <li><a class="nav-link" href="blog.html">Blog</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li id="lg-bag">
+        <a class="nav-link" href="cart.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </li>
     </ul>
   </nav>
 </header>
 
+
+
+
 <!-- main home page section  -->
 <main>
-  <h4>Trade-in-offer</h4>
-  <h2>Super value deals</h2>
-  <h1>On all products</h1>
-  <p>Save more with coupons & up to 70% off! </p>
-  <button>Shop Now</button>
+  <h4>Premier Collections</h4>
+  <h2>Timeless Elegance</h2>
+  <h1>The Gold Standard</h1>
+  <p>Experience the pinnacle of luxury with our curated seasonal selections.</p>
+  <button class="normal">Explore Collection</button>
 </main>
 
-<section class="features">
+<section class="features section-p1">
 <div class="fe-box">
-  <img src="pictures/features section/f1.png" alt="">
-  <h6 id="fe-h1"> Free shipping</h6>
+  <i class="fa-solid fa-truck-fast"></i>
+  <h6>Express Courier</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f2.png" alt="">
-  <h6 id="fe-h2"> Free shipping</h6>
+  <i class="fa-solid fa-clock-rotate-left"></i>
+  <h6>24/7 Concierge</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f3.png" alt="">
-  <h6 id="fe-h3"> Free shipping</h6>
+  <i class="fa-solid fa-shield-halved"></i>
+  <h6>Secure Atelier</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f4.png" alt="">
-  <h6 id="fe-h4"> Free shipping</h6>
+  <i class="fa-solid fa-award"></i>
+  <h6>Artisan Quality</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f5.png" alt="">
-  <h6 id="fe-h5"> Free shipping</h6>
+  <i class="fa-solid fa-gem"></i>
+  <h6>Exclusive Edits</h6>
 </div>
 <div class="fe-box">
-  <img src="pictures/features section/f6.png" alt="">
-  <h6 id="fe-h6"> Free shipping</h6>
+  <i class="fa-solid fa-gift"></i>
+  <h6>Luxe Gifting</h6>
 </div>
 </section>
 
@@ -70,10 +91,10 @@
 
 <section class="products-container">
   <div class="pro">
-    <img src="pictures/product-section/f1.jpg" alt="">
+    <img src="pictures/product-section/luxe-gown.png" alt="Velora Gown">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Gold-Threaded Evening Gown</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -86,10 +107,10 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/f2.jpg" alt="">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Golden Strappy Atelier Heels</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -102,10 +123,10 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/f3.jpg" alt="">
+    <img src="pictures/product-section/luxe-gown.png" alt="Velora Gown">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Gold-Threaded Evening Gown</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -118,10 +139,10 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/f4.jpg" alt="">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Golden Strappy Atelier Heels</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -134,10 +155,26 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/f5.jpg" alt="">
+    <img src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&q=80&w=2070" alt="Velora Timepiece">
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Midnight Gold Chronograph</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>$1,250</h4>
+    </div>
+    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Embroidered Velvet Blouse</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -150,42 +187,26 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/f6.jpg" alt="">
- <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <img src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&q=80&w=2070" alt="Velora Timepiece">
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Midnight Gold Chronograph</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>$1,250</h4>
+    </div>
+    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/f7.jpg" alt="">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
-  </div>
-  <div class="pro">
-    <img src="pictures/product-section/f8.jpg" alt="">
- <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Embroidered Velvet Blouse</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -202,9 +223,9 @@
 
 
 <section class="banner">
-  <h4>Repair Services</h4>
-<h2>Up to <span>70% off</span> - All t-shirt & Accessories</h2>
-<button>explore more</button>
+  <h4>Artisan Excellence</h4>
+  <h2>Limited Time: <span>30% OFF</span> Curated Masterpieces & Grand Accessories</h2>
+  <button class="normal">Explore the Collection</button>
 </section>
 
 
@@ -216,10 +237,26 @@
 
 <section class="products-container">
   <div class="pro">
-    <img src="pictures/product-section/n1.jpg" alt="">
+    <img src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&q=80&w=2070" alt="Velora Timepiece">
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Midnight Gold Chronograph</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>$1,250</h4>
+    </div>
+    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Embroidered Velvet Blouse</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -232,10 +269,26 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/n2.jpg" alt="">
+    <img src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&q=80&w=2070" alt="Velora Timepiece">
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Midnight Gold Chronograph</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>$1,250</h4>
+    </div>
+    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Embroidered Velvet Blouse</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -248,10 +301,26 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/n3.jpg" alt="">
+    <img src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&q=80&w=2070" alt="Velora Timepiece">
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Midnight Gold Chronograph</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>$1,250</h4>
+    </div>
+    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+  </div>
+  <div class="pro">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Embroidered Velvet Blouse</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -264,74 +333,26 @@
 <a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/n4.jpg" alt="">
- <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <img src="https://images.unsplash.com/photo-1524334228333-0f6db392f8a1?auto=format&fit=crop&q=80&w=2070" alt="Velora Timepiece">
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Midnight Gold Chronograph</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>$1,250</h4>
+    </div>
+    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
   </div>
   <div class="pro">
-    <img src="pictures/product-section/n5.jpg" alt="">
+    <img src="pictures/product-section/luxe-heels.png" alt="Luxe Heels">
  <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
-  </div>
-  <div class="pro">
-    <img src="pictures/product-section/n6.jpg" alt="">
- <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
-  </div>
-  <div class="pro">
-    <img src="pictures/product-section/n7.jpg" alt="">
- <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
-  </div>
-  <div class="pro">
-    <img src="pictures/product-section/n8.jpg" alt="">
- <div class="description">
-<span>adidas</span>
-<h5>Cartoon Astronaut T-Shirts</h5>
+<span>Atelier Velora</span>
+<h5>Embroidered Velvet Blouse</h5>
 <div class="stars">
   <i class="fas fa-star"></i>
   <i class="fas fa-star"></i>
@@ -349,15 +370,15 @@
 
 <section class="banners-box">
 <div class="banner-bx">
-  <h4>crazy deals</h4>
-  <h2>buy 1 get 1 free</h2>
-  <span>The best classic dress is on sale at cara</span>
+  <h4>Exclusive Privileges</h4>
+  <h2>Bespoke Luxury Events</h2>
+  <span>The most classic dress is on sale at VELORA</span>
   <button class="button-white">learn more </button>
 </div>
 <div class="banner-bx" id="banner-bx2">
-  <h4>crazy deals</h4>
-  <h2>buy 1 get 1 free</h2>
-  <span>The best classic dress is on sale at cara</span>
+  <h4>Exclusive Privileges</h4>
+  <h2>Bespoke Luxury Events</h2>
+  <span>The most classic dress is on sale at VELORA</span>
   <button class="button-white">learn more </button>
 </div>
 </section>
@@ -381,14 +402,13 @@
 
 <section class="banner-search-box">
   <div class="descrip">
-    <h4>Sign Up For Newsletters</h4>
-    <p>Get E-mail update about our latest shop and <span> special offers.</span></p>
+    <h4>Join the Velora Circle</h4>
+    <p>Receive exclusive insights and access to our <span> bespoke collections.</span></p>
   </div>
 
-
   <div class="for-box">
-    <input type="text">
-    <button class="button-green">Sign up</button>
+    <input type="email" placeholder="Your Distinguished E-mail">
+    <button class="button-luxe">Join Now</button>
   </div>
 </section>
 
@@ -396,7 +416,7 @@
 
 <footer>
   <div class="fot-box">
-    <img class="img-logo" src="pictures/general/logo.png" alt="logo image">
+    <a class="logo" href="home.html">VEL<span>ORA</span></a>
     <h4>Contact</h4>
     <p><strong>Address:</strong> Egypt - Minya</p>
     <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
@@ -443,4 +463,3 @@
 
 </body>
 </html>
-
