@@ -54,7 +54,7 @@
   --shadow-sm: 0 5px 15px rgba(0,0,0,0.05);
   --shadow-md: 0 10px 30px rgba(0,0,0,0.1);
   --shadow-lg: 0 30px 60px rgba(0,0,0,0.15);
-  
+
   /* Layout */
   --header-height: 90px;
   --section-padding: 40px 80px;
@@ -300,8 +300,8 @@ button.white:hover,
 
 /* ---------------- Home / Hero Section ---------------- */
 main {
-  background-image: url("../pictures/general/luxury-hero.png");
-  height: 90vh;
+  /* background-image: url("../pictures/general/luxury-hero.png"); */
+  height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center 20%; /* Adjusted for focus on the model */
@@ -313,6 +313,17 @@ main {
   position: relative;
   overflow: hidden;
 }
+
+#myVideo {
+ position: absolute; /* NOT fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* KEY: fills hero without distortion */
+  z-index: -1;
+}
+
 
 main::before {
     content: "";
@@ -334,7 +345,7 @@ main h4 {
   padding-bottom: 15px;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: var(--secondary-color);
+  color: white;
   font-weight: 600;
 }
 
@@ -349,12 +360,14 @@ main h1 {
 main h2 {
     font-size: 55px;
     margin-bottom: 10px;
+    color: white;
 }
 
 main p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 30px;
+    color: grey;
 }
 
 main button {
@@ -457,7 +470,7 @@ main button:hover {
 
 .pro img {
   width: 100%;
-  height: 350px; /* Fixed height for consistency */
+  height: 30rem; /* Fixed height for consistency */
   object-fit: cover;
   border-radius: 4px; /* More sophisticated subtle corners */
   transition: var(--transition);
@@ -485,10 +498,11 @@ main button:hover {
 }
 
 .pro .description h4 {
+  font-family: serif;
   padding-top: 7px;
   font-size: 18px;
   font-weight: 700;
-  color: var(--primary-color);
+  color: black;
 }
 
 /* Spotlight Section */
@@ -627,7 +641,7 @@ main button:hover {
   justify-content: center;
   align-items: flex-start;
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&fit=crop&q=80&w=1887");
-  min-width: 48%; 
+  min-width: 48%;
   height: 50vh;
   background-size: cover;
   background-position: center;
@@ -837,7 +851,7 @@ footer {
 }
 
 .install img {
-  margin-bottom: 15px; 
+  margin-bottom: 15px;
 }
 
 
@@ -855,7 +869,7 @@ footer {
     .site-header {
         padding: 15px 25px;
     }
-    
+
     .logo img {
         height: 38px;
     }
@@ -876,18 +890,18 @@ footer {
         transition: var(--transition);
         z-index: 1001;
     }
-    
+
     .site-header.open .site-nav {
         right: 0;
     }
-    
+
     .nav-list {
         flex-direction: column;
         gap: 30px;
     }
 
     .nav-list li {
-        width: 100%; 
+        width: 100%;
     }
 
     .nav-toggle {
@@ -895,7 +909,7 @@ footer {
         order: 2;
         cursor: pointer;
     }
-    
+
     .nav-extras {
         order: 1;
         margin-left: auto;
@@ -909,8 +923,8 @@ footer {
         transition: all 0.3s ease-in-out;
         background-color: #1a1a1a;
     }
-    
-    #close-btn { 
+
+    #close-btn {
         display: block;
         position: absolute;
         top: 30px;
@@ -939,14 +953,14 @@ footer {
     main h2 {
         font-size: 35px;
     }
-    
+
     .features {
         justify-content: center;
     }
     .fe-box {
         margin: 15px 15px;
     }
-    
+
     .products-container {
         justify-content: center;
         gap: 15px;
@@ -957,31 +971,31 @@ footer {
         min-width: unset;
         margin: 10px 0;
     }
-    
+
     .banner {
         height: 25vh;
         border-radius: 4px;
     }
-    
+
     .banner-bx {
         min-width: 100%;
         height: 40vh;
         border-radius: 4px;
     }
-    
+
     .mini-banner {
         min-width: 100%; /* Fully wrap on small tablets */
         height: 30vh;
         margin-bottom: 20px;
         border-radius: 4px;
     }
-    
+
     .banner-search-box {
         padding: 40px;
     }
     .descrip {
         margin-bottom: 20px;
-    } 
+    }
     .for-box {
         width: 100%;
     }
@@ -1123,7 +1137,7 @@ footer {
 }
 
 .about-header img {
-  width: 50%; 
+  width: 50%;
   height: auto;
   border-radius: 10px;
   box-shadow: var(--shadow-md);
@@ -1155,32 +1169,32 @@ footer {
   .blog {
     padding: 100px 20px 0 20px;
   }
-  
+
   .blog-box {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .blog-img {
     width: 100%;
     margin-right: 0;
     margin-bottom: 30px;
   }
-  
+
   .blog-details {
     width: 100%;
   }
 
   .about-header {
     flex-direction: column;
-    padding: 40px 20px; 
+    padding: 40px 20px;
   }
-  
+
   .about-header img {
     width: 100%;
     margin-bottom: 20px;
   }
-  
+
   .about-text {
     width: 100%;
     padding-left: 0;
