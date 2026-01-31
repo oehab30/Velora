@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>About - VELORA</title>
+  <title>Login - VELORA</title>
   <link rel="stylesheet" href="css/home.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-<script src="js/functions.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <script src="js/functions.js" defer></script>
 </head>
-<body class="has-hero">
+<body class="login-page">
+
 <!--  logo and navbar  -->
 <header class="site-header">
   <div class="header-inner">
@@ -47,72 +48,55 @@
   </div>
 </header>
 
-<section class="home-page" style="background-image: url('https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&q=80&w=2070');">
-    <div class="hero-content">
-        <h2>#TheMakers</h2>
-        <p>Crafting timeless elegance since 1994.</p>
-    </div>
-</section>
-
-<section class="about-header section-p1">
-    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&q=80&w=2070" alt="Velora Atelier Interior">
-    <div class="about-text">
-        <h2>Who We Are?</h2>
-        <p>At VELORA, we believe that fashion is more than just clothing; it's a form of high-art expression.</p>
-
-        <abbr title="">"Style is a way to say who you are without having to speak." - We live by these words every day, helping our customers find their unique voice through fashion.</abbr>
-
-        <br><br>
-
-        <div class="marquee-container">
-            <div class="marquee-content">
-                Join our community of over 100,000 fashion lovers! • Sustainable fashion delivered to your doorstep • New arrivals every week • 24/7 Customer Support
+<main class="login-container">
+    <div class="login-split">
+        <div class="login-image" style="background-image: url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=1887&auto=format&fit=crop');">
+            <div class="login-image-overlay">
+                <h2>Welcome Back</h2>
+                <p>Enter your details to access your bespoke wardrobe and exclusive previews.</p>
             </div>
         </div>
+        <div class="login-form-area">
+            <div class="login-form-header">
+                <h1>Sign In</h1>
+                <p>New to Velora? <a href="#">Create an account</a></p>
+            </div>
+
+            <form id="loginForm" class="auth-form">
+                <div class="form-group">
+                    <label for="email">E-mail Address</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-container">
+                        <input type="checkbox" checked>
+                        <span class="checkmark"></span>
+                        Remember me
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-luxe-dark">Sign In</button>
+
+                <div class="social-login">
+                    <p>Or continue with</p>
+                    <div class="social-btns">
+                        <button type="button" class="btn-social"><i class="fab fa-google"></i></button>
+                        <button type="button" class="btn-social"><i class="fab fa-apple"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-</section>
-
-<section id="about-app" class="section-p1">
-    <h1>Download Our <a href="#">Mobile App</a></h1>
-    <p>Shop on the go with our sleek mobile app. Get exclusive deals, early access to sales, and seamless checkout.</p>
-    <div class="video">
-        <img src="pictures/general/app-mockup.png" alt="Cara Mobile App" style="max-width: 400px; margin: 0 auto; display: block; filter: drop-shadow(var(--shadow-lg));">
-    </div>
-</section>
-
-
-
-
-
-<section class="features section-p1">
-<div class="fe-box">
-  <i class="fa-solid fa-truck-fast"></i>
-  <h6>Express Courier</h6>
-</div>
-<div class="fe-box">
-  <i class="fa-solid fa-clock-rotate-left"></i>
-  <h6>24/7 Concierge</h6>
-</div>
-<div class="fe-box">
-  <i class="fa-solid fa-shield-halved"></i>
-  <h6>Secure Atelier</h6>
-</div>
-<div class="fe-box">
-  <i class="fa-solid fa-award"></i>
-  <h6>Artisan Quality</h6>
-</div>
-<div class="fe-box">
-  <i class="fa-solid fa-gem"></i>
-  <h6>Exclusive Edits</h6>
-</div>
-<div class="fe-box">
-  <i class="fa-solid fa-gift"></i>
-  <h6>Luxe Gifting</h6>
-</div>
-</section>
-
-
-
+</main>
 
 <footer>
   <div class="fot-box">
@@ -121,7 +105,6 @@
     <p><strong>Address:</strong> Egypt - Minya</p>
     <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
     <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
-    <h4>follow</h4>
     <div class="icon">
       <i class="fab fa-facebook-f"></i>
       <i class="fab fa-twitter"></i>
@@ -161,9 +144,5 @@
   </div>
 </footer>
 
-
-<script src="js/functions.js" defer></script>
 </body>
-
 </html>
-

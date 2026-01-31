@@ -8,42 +8,51 @@
     <link rel="stylesheet" href="css/home.css"/>
 <script src="js/functions.js" defer></script>
 </head>
-<body>
-<div id="preloader">
-    <div class="loader-content">
-        <div class="loader-logo">VELORA</div>
-    </div>
-</div>
+<body class="has-hero">
 
+<!--  logo and navbar  -->
 <header class="site-header">
-  <a class="logo" href="home.html">VELORA</a>
+  <div class="header-inner">
+    <nav class="nav-left">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class="nav-link" href="blog.html">Journal</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
+    <div class="header-center">
+      <a class="logo" href="home.html">VELORA</a>
+    </div>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <button id="close-btn" class="nav-close" aria-label="Close menu">&times;</button>
-    <ul class="nav-list">
-      <li><a class="nav-link" href="home.html">Home</a></li>
-      <li><a class="nav-link" href="shop.html">Shop</a></li>
-      <li><a class="nav-link" href="blog.html">Blog</a></li>
-      <li><a class="nav-link" href="about.html">About</a></li>
-      <li><a class="nav-link active" href="contact.html">Contact</a></li>
-      <li id="lg-bag">
-        <a class="nav-link" href="cart.html">
-          <i class="fa-solid fa-cart-shopping"></i>
+    <div class="header-right">
+      <div class="nav-secondary">
+        <a href="#" class="nav-link">United States (USD) <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="login.html" class="nav-link">Login</a>
+      </div>
+      <div class="header-icons">
+        <a href="#" class="icon-link search-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="cart.html" class="icon-link cart-link" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge">2</span>
         </a>
-      </li>
-    </ul>
-  </nav>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
 </header>
 
-<section class="home-page" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('pictures/general/luxury-hero.png');">
-    <h2>#BespokeService</h2>
-    <p>CONCIERGE AT YOUR SERVICE. We are here to assist.</p>
+<section class="home-page" style="background-image: url('pictures/general/luxury-hero.png');">
+    <div class="hero-content">
+        <h2>#BespokeService</h2>
+        <p>CONCIERGE AT YOUR SERVICE. We are here to assist.</p>
+    </div>
 </section>
 
 <section id="contact-details" class="section-p1">

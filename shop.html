@@ -8,211 +8,222 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 <script src="js/functions.js" defer></script>
 </head>
-<body>
-<!-- <div id="preloader">
-    <div class="loader-content">
-        <div class="loader-logo">VELORA</div>
-    </div>
-</div> -->
+<body class="has-hero">
+<!--  logo and navbar  -->
 <header class="site-header">
-  <a class="logo" href="home.html">VELORA</a>
+  <div class="header-inner">
+    <nav class="nav-left">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class="nav-link" href="blog.html">Journal</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
+    <div class="header-center">
+      <a class="logo" href="home.html">VELORA</a>
+    </div>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <button id="close-btn" class="nav-close" aria-label="Close menu">&times;</button>
-    <ul class="nav-list">
-      <li><a class="nav-link" href="home.html">Home</a></li>
-      <li><a class="nav-link active" href="shop.html">Shop</a></li>
-      <li><a class="nav-link" href="blog.html">Blog</a></li>
-      <li><a class="nav-link" href="about.html">About</a></li>
-      <li><a class="nav-link" href="contact.html">Contact</a></li>
-      <li id="lg-bag">
-        <a class="nav-link" href="cart.html">
-          <i class="fa-solid fa-cart-shopping"></i>
+    <div class="header-right">
+      <div class="nav-secondary">
+        <a href="#" class="nav-link">United States (USD) <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="login.html" class="nav-link">Login</a>
+      </div>
+      <div class="header-icons">
+        <a href="#" class="icon-link search-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="cart.html" class="icon-link cart-link" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge">2</span>
         </a>
-      </li>
-    </ul>
-  </nav>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
 </header>
 
-<section class="home-page" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=2070');">
-    <h2>#CuratedLuxe</h2>
-    <p>Discover perfection in every detail.</p>
+<section class="hero" style="min-height: 50vh;">
+    <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1441984904996-e0b6ba687e04?auto=format&fit=crop&q=80&w=2070'); opacity: 0.8;"></div>
+    <div class="hero-content">
+        <h1 style="font-size: 60px;">#CuratedLuxe</h1>
+        <p class="hero-subtitle">Discover perfection in every detail.</p>
+    </div>
 </section>
 
-<section id="shop-controls" class="section-p1">
-    <div class="search-bar">
-        <input type="text" placeholder="Search our collection...">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+<section id="shop-controls">
+    <div class="shop-filters-bar">
+        <div class="filter-group">
+            <span class="filter-label">Sort by:</span>
+            <select class="shop-select" id="sort-filter">
+                <option value="newest">Newest Arrivals</option>
+                <option value="low-high">Price: Low to High</option>
+                <option value="high-low">Price: High to Low</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <span class="filter-label">Category:</span>
+            <select class="shop-select" id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="evening">Evening Wear</option>
+                <option value="accessories">Accessories</option>
+                <option value="shoes">Footwear</option>
+            </select>
+        </div>
     </div>
-    <div class="filters">
-        <select name="category" id="category-filter">
-            <option value="all">All Categories</option>
-            <option value="evening">Evening Wear</option>
-            <option value="accessories">Accessories</option>
-            <option value="shoes">Footwear</option>
-        </select>
-        <select name="sort" id="sort-filter">
-            <option value="newest">Newest Arrivals</option>
-            <option value="low-high">Price: Low to High</option>
-            <option value="high-low">Price: High to Low</option>
-        </select>
-    </div>
+    <div class="results-count">Showing 1–12 of 48 results</div>
 </section>
 <section class="spotlight-section">
-    <div class="spotlight-content">
-        <h4>The Luxe Edit</h4>
-        <h2>Artisan Craftsmanship</h2>
-        <p>Explore our seasonal spotlight: a masterfully curated selection of evening silk gowns and gold-accented accessories. Each piece is hand-selected to represent the pinnacle of Velora's legacy.</p>
-        <button class="normal">Explore the Gallery</button>
+    <div class="spotlight-container">
+        <div class="spotlight-image">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" alt="Featured Collection">
+        </div>
+        <div class="spotlight-content">
+            <span class="spotlight-label">The Luxe Edit</span>
+            <h2>Artisan Craftsmanship</h2>
+            <p>Explore our seasonal spotlight: a masterfully curated selection of evening silk gowns and gold-accented accessories. Each piece is hand-selected to represent the pinnacle of Velora's legacy.</p>
+            <button class="btn-luxe">Explore the Gallery</button>
+        </div>
     </div>
-    <div class="spotlight-image">
-        <img src="./pictures/general/luxury-hero.png" alt="Featured Collection">
-    </div>
+</section>
+
+<section class="headline-label" style="margin-top: 100px;">
+    <h2>The Collection</h2>
+    <p>Hand-selected pieces for the discerning individual.</p>
 </section>
 
 <section class="products-container">
+  <!-- Product 1 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27031276_99-99999999_01.jpg?ts=1763573732910&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>V-neck knit sweater</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 1,999.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <span class="pro-badge">New</span>
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27031276_99-99999999_01.jpg?ts=1763573732910&im=SmartCrop,width=480,height=672&imdensity=1" alt="V-neck knit sweater" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27031276_99_D1.jpg?ts=1763573732910&im=SmartCrop,width=480,height=672&imdensity=1" alt="V-neck knit sweater hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>V-neck knit sweater</h5>
+      <h4>EGP 1,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
+
+  <!-- Product 2 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27064788_99-99999999_01.jpg?ts=1769517909431&im=SmartCrop,width=480,height=672&imdensity=1" alt="Strappy Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Stitched leather shoulder bag</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 15,999.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27061232_30-99999999_01.jpg?imwidth=2048&imdensity=1&ts=1761132457991" alt="Stitched leather shoulder bag" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27061232_30.jpg?imwidth=2048&imdensity=1&ts=1761132457991" alt="Stitched leather shoulder bag hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Stitched leather shoulder bag</h5>
+      <h4>EGP 15,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
+
+  <!-- Product 3 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27061217_99-99999999_01.jpg?ts=1761067749027&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27061217_99-99999999_01.jpg?ts=1761067749027&im=SmartCrop,width=480,height=672&imdensity=1" alt="Handmade wool coat" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27061217_99_D1.jpg?ts=1761067749027&im=SmartCrop,width=480,height=672&imdensity=1" alt="Handmade wool coat hover" class="pro-img-secondary">
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Handmade wool coat with belt</h5>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
       <h4>EGP 12,999.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
-  <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27091305_99-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Faux-leather biker jacket
-</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 6,299.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
 
-</div>
+  <!-- Product 4 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27071311_99-99999999_01.jpg?ts=1760373284769&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Luxury Gold-Thread Gown</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>$78</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27091305_99-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Faux-leather biker jacket" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27091305_99_D1.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Faux-leather biker jacket hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Faux-leather biker jacket</h5>
+      <h4>EGP 6,299.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
+
+  <!-- Product 5 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27011308_99-99999999_01.jpg?ts=1761671090814&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Manteco wool coat with belt</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 15,999.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <span class="pro-badge sale">Sale</span>
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27041308_30-99999999_01.jpg?imwidth=2048&imdensity=1&ts=1762175150219" alt="Luxury Gold Gown" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27041308_30.jpg?imwidth=2048&imdensity=1&ts=1762175150219" alt="Luxury Gold Gown hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>V-neck knit sweater</h5>
+      <h4>EGP 24,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
+
+  <!-- Product 6 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27011292_TN-99999999_01.jpg?ts=1764678942420&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Wide leg maternity jeans</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 4,499.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27011308_99-99999999_01.jpg?ts=1761671090814&im=SmartCrop,width=480,height=672&imdensity=1" alt="Manteco wool coat" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27011308_99_D1.jpg?ts=1761671090814&im=SmartCrop,width=480,height=672&imdensity=1" alt="Manteco wool coat hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Manteco wool coat with belt</h5>
+      <h4>EGP 15,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
+
+  <!-- Product 7 -->
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27021198_TN-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Matilda medium-rise straight-fit jeans</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 2,999.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27011292_TN-99999999_01.jpg?ts=1764678942420&im=SmartCrop,width=480,height=672&imdensity=1" alt="Wide leg maternity jeans" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27011292_TN_D1.jpg?ts=1764678942420&im=SmartCrop,width=480,height=672&imdensity=1" alt="Wide leg maternity jeans hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Wide leg maternity jeans</h5>
+      <h4>EGP 4,499.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
+  </div>
+
+  <!-- Product 8 -->
+  <div class="pro">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27021198_TN-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Matilda jeans" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27021198_TN_D1.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Matilda jeans hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Matilda medium-rise straight-fit jeans</h5>
+      <h4>EGP 2,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
 </section>
 
 
 
 <section class="page-nav">
-<a href="">1</a>
+<a href="#" class="active">1</a>
 <a href="">2</a>
 <a href=""><i class="fa-solid fa-arrow-right"></i></a></section>
 

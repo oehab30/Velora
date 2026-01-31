@@ -11,7 +11,7 @@
 <script src="js/functions.js" defer></script>
 </head>
 
-<body>
+<body class="has-hero">
 
 
 <!-- <div id="preloader">
@@ -24,45 +24,57 @@
 
 <!--  logo and navbar  -->
 <header class="site-header">
-  <a class="logo" href="home.html">VELORA</a>
+  <div class="header-inner">
+    <nav class="nav-left">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="shop.html">Shop <i class="fa-solid fa-chevron-down"></i></a></li>
+        <li><a class="nav-link" href="blog.html">Journal</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-  <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button>
+    <div class="header-center">
+      <a class="logo" href="home.html">VELORA</a>
+    </div>
 
-  <nav class="site-nav" aria-label="Main navigation">
-    <button id="close-btn" class="nav-close" aria-label="Close menu">&times;</button>
-    <ul class="nav-list">
-      <li><a class="nav-link active" href="home.html">Home</a></li>
-      <li><a class="nav-link" href="shop.html">Shop</a></li>
-      <li><a class="nav-link" href="blog.html">Blog</a></li>
-      <li><a class="nav-link" href="about.html">About</a></li>
-      <li><a class="nav-link" href="contact.html">Contact</a></li>
-      <li id="lg-bag">
-        <a class="nav-link" href="cart.html">
-          <i class="fa-solid fa-cart-shopping"></i>
+    <div class="header-right">
+      <div class="nav-secondary">
+        <a href="#" class="nav-link">United States (USD) <i class="fa-solid fa-chevron-down"></i></a>
+        <a href="login.html" class="nav-link">Login</a>
+      </div>
+      <div class="header-icons">
+        <a href="#" class="icon-link search-trigger" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="cart.html" class="icon-link cart-link" aria-label="Cart">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-badge">2</span>
         </a>
-      </li>
-    </ul>
-  </nav>
+      </div>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </div>
 </header>
 
-
-
-
 <!-- main home page section  -->
-<main>
-  <video autoplay muted loop playsinline id="myVideo">
-    <source src="https://shop.mango.com/cms-assets/v3/assets/blt351b9b24ac05a648/bltcab8257efd012a75/697723ebb56a7290a1fc1ff6/v_T226_nnvanillabreeze_16x9_6s.mp4" type="video/mp4">
-  </video>
+<main class="hero">
+  <!-- Added dynamic background image from Unsplash for better visual alignment with reference -->
+  <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop');"></div>
 
-  <h4>Premier Collections</h4>
-  <h2>Timeless Elegance</h2>
-  <h1>The Gold Standard</h1>
-  <p>Experience the pinnacle of luxury with our curated seasonal selections.</p>
-  <button class="normal">Explore Collection</button>
+  <div class="hero-content">
+    <div class="hero-label animate-fade-up">Express Yourself</div>
+    <h1 class="animate-fade-up delay-1">Loved For Style</h1>
+    <p class="hero-subtitle animate-fade-up delay-2">It's hard to be nice if you don't feel comfortable.</p>
+    <div class="hero-btns animate-fade-up delay-3">
+      <button class="btn-ghost">Shop Collection</button>
+    </div>
+  </div>
+
+
 </main>
 
 
@@ -101,106 +113,90 @@
 
 <section class="products-container">
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17077779_99-99999999_01.jpg?ts=1758535502664&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Ribbed knitted A-line dress</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 4,000.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <span class="pro-badge">New</span>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17077779_99-99999999_01.jpg?ts=1758535502664&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17077779_99_D1.jpg?ts=1758535502664&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Ribbed knitted A-line dress</h5>
+      <h4>EGP 4,000.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
 
 
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17037883_99-99999999_01.jpg?ts=1761044702403&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Fringed jumpsuit</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 9,999.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17037883_99-99999999_01.jpg?ts=1761044702403&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17037883_99_D1.jpg?ts=1761044702403&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Fringed jumpsuit</h5>
+      <h4>EGP 9,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
-  <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27052541_99-99999999_01.jpg?ts=1765276501019&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Polo neck dress with mixed fabrics</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 2,999.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
-  </div>
-  <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17015830_99-99999999_01.jpg?ts=1756807531073&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Puff-sleeved chiffon dress</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 7,499.00</h4>
-</div>
 
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
-  </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17084144_99-99999999_01.jpg?ts=1752077249684&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27052541_99-99999999_01.jpg?ts=1765276501019&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27052541_99_D1.jpg?ts=1765276501019&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Gown hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Polo neck dress with mixed fabrics</h5>
+      <h4>EGP 2,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
+  </div>
+
+  <div class="pro">
+    <div class="pro-img-wrapper">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17015830_99-99999999_01.jpg?ts=1756807531073&im=SmartCrop,width=480,height=672&imdensity=1" alt="Puff-sleeved chiffon dress" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17015830_99_D1.jpg?ts=1756807531073&im=SmartCrop,width=480,height=672&imdensity=1" alt="Puff-sleeved chiffon dress hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Puff-sleeved chiffon dress</h5>
+      <h4>EGP 7,499.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
+  </div>
+
+  <div class="pro">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17084144_99-99999999_01.jpg?ts=1752077249684&im=SmartCrop,width=480,height=672&imdensity=1" alt="Halter-neck jumpsuit" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17084144_99_R.jpg?imwidth=2048&imdensity=1&ts=1752077249684" alt="Halter-neck jumpsuit hover" class="pro-img-secondary">
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Halter-neck jumpsuit with scarf</h5>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
-        <h4>EGP 7,499.00</h4>
+      <h4>EGP 7,499.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17075814_99-99999999_01.jpg?ts=1754652893222&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Bow cut-out detail dress</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 4,499.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/outfit/S/17075814_99-99999999_01.jpg?ts=1754652893222&im=SmartCrop,width=480,height=672&imdensity=1" alt="Bow cut-out detail dress" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T1/fotos/S/17075814_99_D1.jpg?ts=1754652893222&im=SmartCrop,width=480,height=672&imdensity=1" alt="Bow cut-out detail dress hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Bow cut-out detail dress</h5>
+      <h4>EGP 4,499.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27022540_99-99999999_01.jpg?ts=1765964086173&im=SmartCrop,width=480,height=672&imdensity=12070" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27022540_99-99999999_01.jpg?ts=1765964086173&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27022540_99_D1.jpg?ts=1765964086173&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece hover" class="pro-img-secondary">
+
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Wool jacket with shirt collar</h5>
@@ -213,23 +209,26 @@
       </div>
       <h4>EGP 7,499.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-cart-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27094774_99-99999999_01.jpg?ts=1767873955685&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Straight jacket with flap pockets</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 6,299.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27094774_99-99999999_01.jpg?ts=1767873955685&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27094774_99_D1.jpg?ts=1767873955685&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Straight jacket with flap pockets</h5>
+      <div class="stars">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <h4>EGP 6,299.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-cart-shopping"></i> Add to Bag</a>
   </div>
 
 </section>
@@ -250,133 +249,108 @@
 
 <section class="products-container">
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27063296_99-99999999_01.jpg?ts=1767170141236&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27063296_99-99999999_01.jpg?ts=1767170141236&im=SmartCrop,width=480,height=672&imdensity=1" alt="Sweater Perkins Collar" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27063296_99_D1.jpg?ts=1767170141236&im=SmartCrop,width=480,height=672&imdensity=1" alt="Sweater Perkins Collar hover" class="pro-img-secondary">
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Sweater with contrasting stripes and perkins collar</h5>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
       <h4>EGP 2,999.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27084088_99-99999999_01.jpg?ts=1768487886787&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Round neck knitted cape</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 4,499.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27084088_99-99999999_01.jpg?ts=1768487886787&im=SmartCrop,width=480,height=672&imdensity=1" alt="Round neck knitted cape" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27084088_99_D1.jpg?ts=1768487886787&im=SmartCrop,width=480,height=672&imdensity=1" alt="Round neck knitted cape hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Round neck knitted cape</h5>
+      <h4>EGP 4,499.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27097135_99-99999999_01.jpg?ts=1767956741077&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27097135_99-99999999_01.jpg?ts=1767956741077&im=SmartCrop,width=480,height=672&imdensity=1" alt="Embroidered openwork blouse" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27097135_99.jpg?imwidth=2048&imdensity=1&ts=1767956741077" alt="Embroidered openwork blouse hover" class="pro-img-secondary">
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Embroidered openwork blouse</h5>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
       <h4>EGP 7,499.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27054094_99-99999999_01.jpg?ts=1767357379017&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Fitted suit waistcoat</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 5,299.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27054094_99-99999999_01.jpg?ts=1767357379017&im=SmartCrop,width=480,height=672&imdensity=1" alt="Fitted suit waistcoat" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27054094_99_D1.jpg?ts=1767357379017&im=SmartCrop,width=480,height=672&imdensity=1" alt="Fitted suit waistcoat hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Fitted suit waistcoat</h5>
+      <h4>EGP 5,299.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27041294_99-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27041294_99-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Midnight Gold Chronograph" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27041294_99_D1.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Midnight Gold Chronograph hover" class="pro-img-secondary">
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Midnight Gold Chronograph</h5>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
       <h4>EGP 3,250.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27021197_TS-99999999_01.jpg?ts=1761309362586&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>High-waisted wide leg jeans</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 2,999.00</h4>
-</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27021197_TS-99999999_01.jpg?ts=1761309362586&im=SmartCrop,width=480,height=672&imdensity=1" alt="Wide leg jeans" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27021197_TS_D1.jpg?ts=1761309362586&im=SmartCrop,width=480,height=672&imdensity=1" alt="Wide leg jeans hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>High-waisted wide leg jeans</h5>
+      <h4>EGP 2,999.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27091296_99-99999999_01.jpg?ts=1761671090814&im=SmartCrop,width=480,height=672&imdensity=1" alt="Velora Timepiece">
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27091296_99-99999999_01.jpg?ts=1761671090814&im=SmartCrop,width=480,height=672&imdensity=1" alt="Combined V-neck jumpsuit" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27091296_99_D1.jpg?ts=1761671090814&im=SmartCrop,width=480,height=672&imdensity=1" alt="Combined V-neck jumpsuit hover" class="pro-img-secondary">
+    </div>
     <div class="description">
       <span>Atelier Velora</span>
       <h5>Combined V-neck jumpsuit</h5>
-      <div class="stars">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-      </div>
       <h4>EGP 6,299.00</h4>
     </div>
-    <a class="pro-cart" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
   <div class="pro">
-    <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27051272_99-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Luxe Heels">
- <div class="description">
-<span>Atelier Velora</span>
-<h5>Double-breasted jacket with buttons</h5>
-<div class="stars">
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-  <i class="fas fa-star"></i>
-</div>
-<h4>EGP 4,499.00</h4>
-</div>
-<a class="pro-cart"  href=""><i class="fa-solid fa-cart-shopping "></i></a>
+    <div class="pro-img-wrapper">
+      <button class="wishlist-btn" aria-label="Add to wishlist"><i class="fa-regular fa-heart"></i></button>
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/outfit/S/27051272_99-99999999_01.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Double-breasted jacket" class="pro-img-primary">
+      <img src="https://shop.mango.com/assets/rcs/pics/static/T2/fotos/S/27051272_99_D1.jpg?ts=1763481929565&im=SmartCrop,width=480,height=672&imdensity=1" alt="Double-breasted jacket hover" class="pro-img-secondary">
+    </div>
+    <div class="description">
+      <span>Atelier Velora</span>
+      <h5>Double-breasted jacket with buttons</h5>
+      <h4>EGP 4,499.00</h4>
+    </div>
+    <a class="pro-cart" href="#"><i class="fa-solid fa-bag-shopping"></i> Add to Bag</a>
   </div>
 
 </section>
