@@ -1,0 +1,17 @@
+{
+  "name": "velora",
+  "version": "1.0.0",
+  "description": "Velora | Luxury Fashion House",
+  "main": "home.html",
+  "scripts": {
+    "start": "http-server .",
+    "build:css": "cleancss -o css/home.min.css css/home.css",
+    "build:js": "terser js/functions.js -o js/functions.min.js",
+    "build": "npm run build:css && npm run build:js"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "terser": "^5.31.0",
+    "clean-css-cli": "^5.6.3"
+  }
+}
