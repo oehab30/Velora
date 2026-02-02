@@ -88,7 +88,10 @@
   --text-muted: #666666;
   --border-ultra-light: rgba(0, 0, 0, 0.05);
 
-  --transition-smooth: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  --transition-smooth: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.35s ease,
+    background-color 0.35s ease,
+    color 0.35s ease;
   --transition-fast: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
   --shadow-premium: 0 20px 50px rgba(0, 0, 0, 0.05);
@@ -210,7 +213,7 @@ button.white,
   cursor: pointer;
   border: 1px solid #fff;
   outline: none;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
 }
 
 button.white:hover,
@@ -434,10 +437,10 @@ body:not(.has-hero) .site-header .nav-toggle .bar {
 .hero-bg {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100vh;
     background-size: cover;
+    background-position: top;
     z-index: 0;
 }
 
@@ -828,7 +831,6 @@ body:not(.has-hero) .site-header .nav-toggle .bar {
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
-  transition: var(--transition);
   border-radius: 4px;
   transition: 
     transform 0.35s cubic-bezier(0.4, 0, 0.2, 1),
@@ -842,7 +844,8 @@ body:not(.has-hero) .site-header .nav-toggle .bar {
   color: #fff;
   transform: translateY(-6px) scale(1.03);
   box-shadow: var(--shadow-md);
-  transition: 0.3s ease-in-out ;
+  transition: var(--transition-smooth) ;
+
 }
 
 /* Side Banners */
@@ -914,7 +917,7 @@ width: 49%;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&q=80&w=2070");
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1510965168540-03ea63c46e22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHxXaW50ZXIlMjBDb2xsZWN0aW9ufGVufDB8fDB8fHww");
   min-width: 32%;
   height: 30vh;
   background-size: cover;
@@ -924,11 +927,9 @@ width: 49%;
   border-radius: 4px;
 }
 
-#banner-b2 {
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("https://images.unsplash.com/photo-1491336477066-31156b5e4f35?auto=format&fit=crop&q=80&w=2070");
-}
 
-#banner-b3 {
+
+#banner-b2 {
   background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("../pictures/banners-section/b7.jpg");
 }
 
@@ -1055,6 +1056,11 @@ footer {
   text-decoration: none;
   color: #222;
   margin-bottom: 10px;
+}
+
+.fot-box a:hover {
+  color: var(--primary-color);
+  transition: var(--transition-smooth);
 }
 
 .fot-box .icon i {
@@ -1369,7 +1375,10 @@ footer {
     font-size: 16px;
   }
 
-
+  #shop-controls {
+    flex-direction: column;
+    gap: 5px;
+  }
 
   .banner h2 {
     height: 19vh;
@@ -1495,8 +1504,8 @@ footer {
 /* Hero for sub-pages */
 .home-page {
   background-size: cover;
-  background-position: center;
-  height: 50vh;
+  background-position: top;
+  height: 60vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -1605,9 +1614,10 @@ footer {
 
 .blog-box img {
   width: 100%;
-  height: 450px;
+  height: 65vh;
   object-fit: cover;
   transition: transform 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+background-position: top;
 }
 
 .blog-box:hover img {
@@ -1910,14 +1920,11 @@ footer {
     border: none;
     border-bottom: 2px solid #eee;
     background: transparent;
-    transition: var(--transition);
     font-size: 15px;
+    
 }
 
-.form-details form input:focus,
-.form-details form textarea:focus {
-    border-color: var(--primary-color);
-}
+
 
 .form-details form button {
     background-color: var(--secondary-color);
@@ -1932,11 +1939,7 @@ footer {
     transition: var(--transition-smooth);
 }
 
-.form-details form button:hover {
-    background-color: var(--primary-color);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-sm);
-}
+
 
 .form-details .people {
     width: 30%;
@@ -1977,6 +1980,8 @@ footer {
     border-bottom-color: var(--primary-color);
     background: #fff;
     padding-left: 25px; /* Subtle interaction */
+    border-color: var(--primary-color);
+
 }
 
 @media (max-width: 799px) {
@@ -1999,6 +2004,21 @@ footer {
         width: 100%;
         margin-bottom: 30px;
     }
+}
+
+@media (max-width: 477px) {
+    .form-details  {
+   margin: 40px 22px;
+    }
+    .form-details .people {
+    width: 20%;
+    margin-top: 40px;
+}
+
+.shop-filters-bar{
+    flex-direction: column;
+    gap: 10px;
+}
 }
 
 
